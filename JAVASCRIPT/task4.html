@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .btn {
+            padding: 8px 15px;
+            margin: 10px 0;
+            border: 1px solid black;
+            cursor: pointer;
+            background-color: lightgray;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #ddd;
+        }
+        p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn" onclick="showDate()">Show Date</button>
+    <p id="date"></p>
+
+    <button class="btn" onclick="showTime()">Show Time</button>
+    <p id="time"></p>
+
+    <script>
+
+        function showDate() {
+            let today = new Date();
+            let day = today.getDate();
+            let month = today.toLocaleString('default', { month: 'long' });
+            let year = today.getFullYear();
+            
+            document.getElementById("date").innerText = `${day} / ${month} / ${year}`;
+        }
+
+        function showTime() {
+            let time = new Date().toLocaleTimeString();
+            document.getElementById("time").innerText = `Current Time: ${time}`;
+        }
+    </script>
+
+</body>
+</html>

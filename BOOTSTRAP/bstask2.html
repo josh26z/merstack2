@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Builderz Layout</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .top-bar {
+      background-color: #fdbf00;
+      color: #000;
+      padding: 10px 0;
+    }
+    .navbar {
+      background-color: #001f3f;
+    }
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .hero-section {
+      position: relative;
+      color: #fff;
+      text-align: center;
+    }
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .info-box {
+      padding: 20px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar d-flex justify-content-between px-5">
+    <div><strong>Builderz</strong></div>
+    <div>
+      <span>Opening Hour: Mon - Fri, 8:00 - 9:00</span>
+      <span class="mx-3">Call Us: +012 345 6789</span>
+      <span>Email Us: info@example.com</span>
+    </div>
+    <div>
+      <button class="btn btn-dark">Get A Quote</button>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">SERVICE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">TEAM</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PROJECT</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">PAGES</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero-section">
+    <img src="construction-site.jpg" class="img-fluid w-100" alt="Construction site" />
+    <div class="hero-text">
+      <p>We Are Professional</p>
+      <h1>For Your Dream Project</h1>
+      <button class="btn btn-outline-light mt-2">GET A QUOTE</button>
+    </div>
+  </div>
+
+  <div class="row m-0">
+    <div class="col-md-4 info-box bg-dark">
+      <h5>Expert Worker</h5>
+      <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+    </div>
+    <div class="col-md-4 info-box bg-warning text-dark">
+      <h5>Quality Work</h5>
+      <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+    </div>
+    <div class="col-md-4 info-box bg-dark">
+      <h5>24/7 Support</h5>
+      <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium ornare velit non.</p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
